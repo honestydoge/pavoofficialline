@@ -1,0 +1,41 @@
+﻿
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINEへ移動</title>
+  <style>
+    body { 
+      font-family: 'Noto Sans JP', Arial, sans-serif; 
+      text-align: center; 
+      padding: 20px; 
+    }
+    button { 
+      padding: 15px 30px; 
+      background-color: #00C300; 
+      color: white; 
+      border: none; 
+      font-size: 18px; 
+      cursor: pointer; 
+    }
+    button:hover { 
+      background-color: #00A300; 
+    }
+  </style>
+  <script>
+    function openLINE() {
+      window.location = "line://ti/p/@405wvdba";
+      setTimeout(function() {
+        window.location = "https://line.me/R/ti/p/@405wvdba";
+      }, 1000);
+    }
+  </script>
+</head>
+<body>
+  <h1>PAVO公式LINE追加</h1>
+  <p>「アクションを完了できません」と表示される場合は、
+  右上の「⋯」から「ブラウザで開く」を選んでください。</p>
+  <button onclick="openLINE()">LINEを開く</button>
+</body>
+</html>
